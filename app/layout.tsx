@@ -1,10 +1,20 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+const satoshi = localFont({
+  src: [
+    {
+      path: '../public/fonts/satoshi-variable.woff2',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/satoshi-variable-italic.woff2',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-satoshi',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -20,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${geistSans.variable} antialiased`}>{children}</body>
+      <body className={`${satoshi.variable} antialiased`}>{children}</body>
     </html>
   )
 }
