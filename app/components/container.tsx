@@ -5,7 +5,7 @@ export default function Container({
   className,
 }: React.ComponentProps<'div'>) {
   return (
-    <div className={cn('container mx-auto max-w-7xl px-5 md:px-0', className)}>
+    <div className={cn('container mx-auto max-w-7xl', className)}>
       {children}
     </div>
   )
