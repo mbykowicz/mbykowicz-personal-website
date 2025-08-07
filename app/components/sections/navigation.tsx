@@ -1,11 +1,7 @@
 import Link from 'next/link'
 import Container from '../container'
 
-interface Props extends React.ComponentProps<'header'> {}
-
-const items = [{ href: '/', label: 'Home' }]
-
-export default function Navigation({}: Props) {
+export default function Navigation({}: React.ComponentProps<'header'>) {
   return (
     <header className='h-[var(--header-height)] flex items-center'>
       <Container className='h-full border-b border-neutral-300'>
