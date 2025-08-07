@@ -3,13 +3,13 @@ import Container from '../container'
 
 export default function Navigation({}: React.ComponentProps<'header'>) {
   return (
-    <header className='h-[var(--header-height)] flex items-center'>
-      <Container className='h-full border-b border-neutral-300'>
+    <header className='h-[var(--header-height)] flex items-center border-b border-neutral-800'>
+      <Container className='relative h-full px-4 2xl:px-0'>
         <nav className='h-full flex items-center justify-between'>
           <div>
             <Link
               href='/'
-              className='relative overflow-hidden text-sm uppercase font-black text-neutral-800 tracking-tighter'
+              className='relative overflow-hidden uppercase font-black text-neutral-800 tracking-tighter'
             >
               <div>Mateusz</div>
               <div className='-mt-1.5'>Bykowicz</div>
@@ -30,7 +30,7 @@ function NavigationItem({ href, label }: { href: string; label: string }) {
   return (
     <Link
       href={href}
-      className='relative overflow-hidden font-semibold text-neutral-800 tracking-tight before:transition-all before:duration-300 before:absolute before:w-0 before:opacity-0 before:bottom-0 before:-mb-1.5 before:h-0.5 before:bg-neutral-800 hover:before:w-full hover:before:opacity-100'
+      className='relative overflow-hidden font-bold text-lg p-1 text-neutral-800 tracking-tight before:transition-all before:duration-300 before:absolute before:w-0 before:left-0 before:opacity-0 before:bottom-0 before:-mb-1.5 before:h-0.5 before:bg-neutral-800 hover:before:w-full hover:before:opacity-100'
     >
       {label}
     </Link>
