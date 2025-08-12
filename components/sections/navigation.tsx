@@ -1,15 +1,15 @@
 import Link from 'next/link'
-import Container from '../container'
+import Container from '@/components/container'
 
 export default function Navigation({}: React.ComponentProps<'header'>) {
   return (
     <header className='h-[var(--header-height)] flex items-center border-b border-neutral-800'>
       <Container className='relative h-full px-4 2xl:px-0'>
-        <nav className='h-full flex items-center justify-between'>
+        <nav className='flex items-center justify-between h-full'>
           <div>
             <Link
               href='/'
-              className='relative overflow-hidden uppercase font-black text-neutral-800 tracking-tighter'
+              className='relative overflow-hidden font-black tracking-tighter uppercase text-neutral-800'
             >
               <div>Mateusz</div>
               <div className='-mt-1.5'>Bykowicz</div>
