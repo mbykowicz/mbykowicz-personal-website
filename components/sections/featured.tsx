@@ -32,9 +32,7 @@ const items = [
 export default function Featured() {
   return (
     <div className='my-10'>
-      <div className='mb-24'>
-        <SectionHeading>Featured Projects</SectionHeading>
-      </div>
+      <SectionHeading>Featured Projects</SectionHeading>
       <div className='max-w-6xl mx-auto border-t border-neutral-800'>
         {items.map((item, index) => (
           <FeatureItem

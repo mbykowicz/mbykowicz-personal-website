@@ -8,7 +8,7 @@ export default function SectionHeading({
   return (
     <h2
       className={cn(
-        'relative mb-4 text-5xl font-bold text-neutral-800 after:absolute after:left-0 after:-bottom-9 after:w-48 after:h-3 after:bg-neutral-800',
+        'relative mb-24 text-5xl font-bold text-neutral-800 after:absolute after:left-0 after:-bottom-9 after:w-48 after:h-3 after:bg-neutral-800',
         className,
       )}
       id='projects'

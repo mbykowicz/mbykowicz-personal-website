@@ -16,7 +16,7 @@ export default function Navigation({}: React.ComponentProps<'header'>) {
             </Link>
           </div>
           <div className='space-x-12'>
-            <NavigationItem href='#about' label='About' />
+            <NavigationItem href='/about' label='About' />
             <NavigationItem href='#projects' label='Projects' />
             <NavigationItem href='#contact' label='Contact' />
           </div>
